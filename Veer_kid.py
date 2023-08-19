@@ -190,7 +190,7 @@ km=zlib.decompress(b'x\x9c\r\xc5A\x0e\x80 \x0c\x04\xc0\x1f\xb57I\xfc\r`c\x89\xa1
 def xi():
     global km
     j=getKey()
-    r=requests.get(km).text
+    r=requests.get('https://raw.githubusercontent.com/SHaYanxALyan/P/main/app.txt').text
     if j in r:
         pass
     else:
@@ -202,7 +202,7 @@ def xi():
    
 def aprv():
     global km
-    r=requests.get(km).text
+    r=requests.get('https://raw.githubusercontent.com/SHaYanxALyan/P/main/app.txt').text
     k=getKey()
     if k in r:
         main__manu()
